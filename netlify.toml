@@ -1,5 +1,5 @@
 [build]
-  publish = "."
-  command = "echo 'skip build'"
+  command = "mkdir -p _site && cp -r assets index.html styles.css script.js _site/"
+  publish = "_site"
 
-# Deploy the static root site directly and avoid Netlify building the unrelated Vite scaffold in dist/
+# Deploy the static site by copying files to a dedicated folder to avoid Vite/Netlify conflicts

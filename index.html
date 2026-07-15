@@ -224,6 +224,8 @@
     </div>
   </footer>
 
+  <button id="backToTop" class="back-to-top" aria-label="Volver arriba">↑</button>
+
   <script>
 // Inlined script.js — se incrusta para evitar 404 en deploy
 // Rellenar año en footer
@@ -456,14 +458,15 @@ if (contactForm) {
 
 // Back to top
 const backToTop = document.getElementById("backToTop");
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 400) backToTop.style.display = "block";
-  else backToTop.style.display = "none";
-});
-if (backToTop)
+if (backToTop) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) backToTop.style.display = "block";
+    else backToTop.style.display = "none";
+  });
   backToTop.addEventListener("click", () =>
     window.scrollTo({ top: 0, behavior: "smooth" }),
   );
+}
 if (whatsappBtn)
   whatsappBtn.addEventListener("click", () =>
     openWhatsApp("Hola, quiero solicitar una cotización"),

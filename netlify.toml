@@ -1,5 +1,5 @@
 [build]
   publish = "."
-  command = ""
+  command = "echo 'skip build'"
 
 # Deploy the static root site directly and avoid Netlify building the unrelated Vite scaffold in dist/

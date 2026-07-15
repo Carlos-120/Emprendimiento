@@ -73,25 +73,25 @@ const projectData = [
   {
     title: "Proyecto 1",
     description: "Tienda, ecommerce responsivo, JavaScript puro.",
-    img: "assets/img/1.png",
+    img: "/assets/img/1.png",
     link: "https://icomers.netlify.app/",
   },
   {
     title: "Proyecto 2",
     description: "Diseño responsivo, motor de búsqueda y peticiones REST.",
-    img: "assets/img/2.png",
+    img: "/assets/img/2.png",
     link: "https://pokemon-120.netlify.app/",
   },
   {
     title: "Proyecto 3",
     description: "Aplicación web con React y Node.js, API REST.",
-    img: "assets/img/3.png",
+    img: "/assets/img/3.png",
     link: "https://rick-and-morty-120.netlify.app/",
   },
   {
     title: "Proyecto 4",
     description: "Portafolio profesional con React.",
-    img: "assets/img/4.png",
+    img: "/assets/img/4.png",
     link: "https://my-portafolio-2.netlify.app/#contact",
   },
 ];

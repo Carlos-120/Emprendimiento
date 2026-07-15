@@ -1,0 +1,5 @@
+[build]
+  publish = "."
+  command = ""
+
+# Deploy the static root site directly and avoid Netlify building the unrelated Vite scaffold in dist/

@@ -203,29 +203,6 @@ document.querySelectorAll(".reveal[data-index]").forEach((el) => {
   el.style.transitionDelay = `${idx * 120}ms`;
 });
 
-// Contact form submit: show sending state briefly then proceed to mailto
-if (contactForm) {
-  contactForm.addEventListener(
-    "submit",
-    (e) => {
-      e.preventDefault();
-      const btn = contactForm.querySelector("button[type='submit']");
-      btn.classList.add("sending");
-      btn.disabled = true;
-      setTimeout(() => {
-        const data = new FormData(contactForm);
-        const subject = `Solicitud - ${data.get("service")}`;
-        const body = `Nombre: ${data.get("name")}\nTeléfono: ${data.get("phone")}\nServicio: ${data.get("service")}\nMensaje: ${data.get("message")}`;
-        const mailto = `mailto:contacto@dreamtech.example?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        window.location.href = mailto;
-        btn.classList.remove("sending");
-        btn.disabled = false;
-      }, 900);
-    },
-    { once: true },
-  );
-}
-
 // Back to top
 const backToTop = document.getElementById("backToTop");
 window.addEventListener("scroll", () => {

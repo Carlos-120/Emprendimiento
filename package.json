@@ -1,0 +1,15 @@
+{
+  "name": "proyecto-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Scaffold mínimo de sitio estático con opciones de desarrollo",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}

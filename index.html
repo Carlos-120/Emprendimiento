@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DreamTech Solutions — Soporte & Desarrollo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div id="preloader" class="preloader">
+    <div class="preloader-inner">
+      <img src="assets/logo.svg" alt="DreamTech" class="preloader-logo">
+      <div class="preloader-spinner"></div>
+    </div>
+  </div>
+  <div id="progressBar" class="progress-bar"><div id="progress" class="progress-fill"></div></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#"><img src="assets/logo.svg" alt="DreamTech" class="brand-logo">DreamTech Solutions</a>
+      <nav class="nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto" class="cta">Contactar</a>
+      </nav>
+      <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Abrir menú">☰</button>
+    </div>
+    <nav id="mobileNav" class="mobile-nav" aria-hidden="true">
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contactar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Soporte técnico premium a domicilio<br><span class="accent">y desarrollo web futurista</span></h1>
+          <p class="lead">Mantenimiento completo para PCs y laptops, instalación y formateo de Windows, configuración de Office y software, además de sitios web profesionales con diseño y rendimiento premium.</p>
+          <div class="hero-badges">
+            <span>Servicio a domicilio</span>
+            <span>Respuesta rápida</span>
+            <span>Garantía en trabajos</span>
+          </div>
+          <div class="hero-ctas">
+            <a href="#contacto" class="btn primary">Solicitar cotización</a>
+            <a id="whatsappBtn" class="btn outline">Contactar por WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero-art" data-parallax-container>
+          <img src="assets/img/jl.jpg" alt="Ilustración DreamTech" class="hero-img" data-parallax="0.08">
+          <div class="float-el f1" data-parallax="0.18"></div>
+          <div class="float-el f2" data-parallax="0.12"></div>
+          <div class="float-el f3" data-parallax="0.22"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section services">
+      <div class="container">
+        <h2>Servicios</h2>
+        <div class="cards">
+          <article class="card interactive-card" data-tilt data-index="0">
+            <img src="assets/icon-maintenance.svg" alt="" class="card-icon">
+            <h3>Mantenimiento y optimización</h3>
+            <p>Diagnóstico, limpieza, optimización y reparación de hardware y software para equipos personales y de oficina.</p>
+          </article>
+          <article class="card interactive-card" data-tilt data-index="1">
+            <img src="assets/icon-home.svg" alt="" class="card-icon">
+            <h3>Soporte técnico a domicilio</h3>
+            <p>Asistencia en tu domicilio u oficina: configuración, redes, backups y solución de problemas.</p>
+          </article>
+          <article class="card interactive-card" data-tilt data-index="2">
+            <img src="assets/icon-windows.svg" alt="" class="card-icon">
+            <h3>Instalación y formateo</h3>
+            <p>Instalación/reinstalación de Windows, formateo seguro y recuperación/respaldos de datos.</p>
+          </article>
+          <article class="card interactive-card" data-tilt data-index="3">
+            <img src="assets/icon-software.svg" alt="" class="card-icon">
+            <h3>Instalación de software</h3>
+            <p>Instalación y configuración de Office, antivirus, controladores y software profesional.</p>
+          </article>
+          <article class="card interactive-card" data-tilt data-index="4">
+            <img src="assets/icon-web.svg" alt="" class="card-icon">
+            <h3>Desarrollo web profesional</h3>
+            <p>Websites corporativos, landing pages y tiendas online con diseño responsive y optimizado.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="porque" class="section why">
+      <div class="container">
+        <h2>¿Por qué elegir DreamTech?</h2>
+        <div class="feature-cards">
+          <article class="feature reveal" data-index="0">
+            <img src="assets/icon-home.svg" alt="A domicilio" class="feature-img">
+            <h3>Atención a domicilio</h3>
+            <p>Servicio técnico en tu hogar u oficina, rápido y seguro.</p>
+          </article>
+          <article class="feature reveal" data-index="1">
+            <img src="assets/icon-maintenance.svg" alt="Técnicos" class="feature-img">
+            <h3>Técnicos certificados</h3>
+            <p>Profesionales con experiencia y garantía en cada trabajo.</p>
+          </article>
+          <article class="feature reveal" data-index="2">
+            <img src="assets/icon-software.svg" alt="Soporte" class="feature-img">
+            <h3>Instalación y soporte</h3>
+            <p>Instalación de Windows, Office y software esencial con respaldo.</p>
+          </article>
+          <article class="feature reveal" data-index="3">
+            <img src="assets/icon-web.svg" alt="Diseño web" class="feature-img">
+            <h3>Diseño web premium</h3>
+            <p>Páginas modernas, rápidas y optimizadas para tu negocio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso" class="section process">
+      <div class="container">
+        <h2>Proceso</h2>
+        <div class="process-cards">
+          <article class="process-card reveal" data-index="0">
+            <img src="assets/icon-maintenance.svg" alt="Diagnóstico" class="process-img">
+            <h4>Diagnóstico gratuito</h4>
+            <p>Evaluamos tu equipo sin compromiso y proponemos soluciones.</p>
+          </article>
+          <article class="process-card reveal" data-index="1">
+            <img src="assets/icon-software.svg" alt="Cotización" class="process-img">
+            <h4>Cotización transparente</h4>
+            <p>Presupuesto claro y sin cargos ocultos.</p>
+          </article>
+          <article class="process-card reveal" data-index="2">
+            <img src="assets/icon-home.svg" alt="Trabajo" class="process-img">
+            <h4>Trabajo a domicilio o remoto</h4>
+            <p>Realizamos el trabajo donde lo necesites, con rapidez.</p>
+          </article>
+          <article class="process-card reveal" data-index="3">
+            <img src="assets/icon-web.svg" alt="Entrega" class="process-img">
+            <h4>Prueba final y entrega</h4>
+            <p>Comprobamos funcionamiento y te entregamos con garantía.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section projects">
+      <div class="container">
+        <h2>Proyectos recientes</h2>
+        <div class="project-viewer">
+          <button class="carousel-nav prev" id="projPrev" aria-label="Proyecto anterior">‹</button>
+          <article class="project-card">
+            <img id="projectImage" src="assets/img/1.png" alt="Proyecto 1 imagen" class="project-img">
+            <div class="project-details">
+              <span class="project-label">Proyecto destacado</span>
+              <h3 id="projectTitle">Proyecto 1</h3>
+              <p id="projectDescription">Tienda, ecommerce responsivo, JavaScript puro.</p>
+              <div class="project-actions">
+                <a id="projectLink" href="https://icomers.netlify.app/" target="_blank" rel="noopener" class="btn outline project-link">Abrir proyecto</a>
+                <span id="projectCounter" class="project-counter">1 / 4</span>
+              </div>
+            </div>
+          </article>
+          <button class="carousel-nav next" id="projNext" aria-label="Proyecto siguiente">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact">
+      <div class="container">
+        <h2>Contacto</h2>
+        <div class="contact-grid">
+          <form id="contactForm" class="contact-form">
+            <label>Nombre
+              <input type="text" name="name" required>
+            </label>
+            <label>Teléfono / WhatsApp
+              <input type="tel" name="phone" required>
+            </label>
+            <label>Servicio
+              <select name="service">
+                <option>Mantenimiento</option>
+                <option>Soporte a domicilio</option>
+                <option>Instalación / Formateo</option>
+                <option>Instalación de software</option>
+                <option>Desarrollo web</option>
+              </select>
+            </label>
+            <label>Mensaje
+              <textarea name="message" rows="4"></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Enviar por correo</button>
+              <a id="whatsappInline" class="btn outline">Enviar por WhatsApp</a>
+            </div>
+          </form>
+          <div class="contact-info">
+            <p class="muted">También puedes contactarnos por:</p>
+            <p><strong>Email:</strong> contacto@dreamtech.example</p>
+            <p><strong>WhatsApp:</strong> +593 600 000 000</p>
+            <p><strong>Teléfono:</strong> +593 600 000 000</p>
+            <div class="social-links">
+              <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="#" target="_blank" rel="noopener">GitHub</a>
+              <a href="#" target="_blank" rel="noopener">TikTok</a>
+              <a href="#" target="_blank" rel="noopener">CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> DreamTech Solutions — Soporte técnico y desarrollo web</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <button id="backToTop" class="back-to-top" aria-label="Volver arriba">↑</button>
+</body>
+</html>
